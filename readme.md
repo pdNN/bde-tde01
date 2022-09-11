@@ -7,6 +7,9 @@ O script cria 3 collections, faz insert nas mesmas, da update em alguns registro
 
 Contexto: loja de carros
 
+Print da execução:
+![image](https://user-images.githubusercontent.com/26514016/189509431-21a044a3-65b5-4615-832a-1de380109058.png)
+
 Requerimentos:
 - python >= 3.8
 - mongodb
