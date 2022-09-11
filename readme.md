@@ -13,31 +13,34 @@ Requerimentos:
 
 Como executar:
 - Em unix, executar os comandos:
-  ```
-  make clean
-  make install
-  python main.py <mongodb username> <mongodb password> <mongodb host> <mongodb database>
-  (ex: python main.py root MongoDB2019! localhost:27017 tde01)
-  ```
+    ```
+    make clean
+    make install
+    python main.py <mongodb username> <mongodb password> <mongodb host> <mongodb database>
+    (ex: python main.py root MongoDB2019! localhost:27017 tde01)
+    ```
 
 - Em windows executar os comandos:
-  ```
-  pip install virtualenv
-  virtualenv venv
-  .\venv\Scripts\Activate.ps1
-  pip install -r ./requirements.txt
-  python main.py <username> <password> <host> <database>
-  ex: python main.py root MongoDB2019! localhost:27017 tde01
-  ```
+    ```
+    pip install virtualenv
+    virtualenv venv
+    .\venv\Scripts\Activate.ps1
+    pip install -r ./requirements.txt
+    python main.py <username> <password> <host> <database>
+    ex: python main.py root MongoDB2019! localhost:27017 tde01
+    ```
 
 Estrutura:
 - diretório inicial:
-  - docker-compose.yaml
-    - Instancia o banco de dados mongodb via docker na máquina
-  - main.py
-    - Arquivo do Script
-  - Makefile
-    - Arquivo com os comandos para baixar as dependências da aplicação
-  - requirements.txt
-    - Arquivo com as dependências do arquivo
+    - src
+        - utils.py
+        > Arquivo com as funções auxiliares do script principal
+    - docker-compose.yaml
+    > Instancia o banco de dados mongodb via docker na máquina
+    - main.py
+    > Arquivo principal do script python
+    - Makefile
+    > Arquivo com os comandos para baixar as dependências da aplicação
+    - requirements.txt
+    > Arquivo com as dependências do arquivo
 
